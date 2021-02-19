@@ -1,0 +1,37 @@
+﻿
+
+
+<form asp-controller="Home" asp-action="Result">
+    <label for="id">Id</label>
+    <input type="number" id="id" name="id" />
+    <br/>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title" required maxlength="50"/>
+
+    <div>
+        <label for="comedy">Comedy</label>
+        <input type="radio" id="comedy" name="genre" required/>
+        
+        <label for="horror">Horror</label>
+        <input type="radio" id="horror" name="genre" required/>
+        
+        <label for="romance">Romance</label>
+        <input type="radio" id="romance" name="genre" required/>
+    </div>
+
+
+    <label for="year">Year</label>
+    <input type="date" id="year" name="year" required min="1880-01-01" max="2021-01-01"/>
+    <br/>
+
+    <label for="actors">Actor(s)</label>
+    <input type="text" id="actors" name="actors" required />
+    <br/>
+
+    <label for="directors">Director(s)</label>
+    <input type="text" id="directors" name="directors" required />
+    <br/>
+
+    <input type="submit" />
+</form>
